@@ -1,5 +1,5 @@
 ## Description
-Nest js Demo Project
+Nest js Demo Project - Please Read Documentation.txt First
 
 ## Node Version
 Node Version - [20.9.0] - Sequelize Only supports upto this version.
