@@ -1,0 +1,83 @@
+For start/setup the project please use README.md file.
+======================================================
+
+create a .env File
+===============
+NODE_ENV = development
+PORT = 3001
+JWT_SECRET = fdsghj43567dfgh
+
+
+change database config in config.json file
+==========================
+
+
+Key FETAURE
+=============
+
+1. Mysql
+2. Sequelize ORM
+3. Role wise auth guard
+4. Nest JS
+5. CRUD
+6. JWT
+7. Hashing
+8. WebHook
+9. File Handling
+10. Routing
+11. Databse Seeding & Migration
+12. Validation with class validator
+13. For testing separate spec.ts files are created, we can move forward from there.
+
+API LIST & FETAURE
+======================
+
+1 . Demonstrated Insert Validation & Hashing.
+----------------------------------------------------------------------
+
+http://localhost:3001/user/register  POST  NO-TOKEN
+BODY -
+{
+    "name": "Suman Roy",
+    "role_id": 2,                  // 1 = super admin , 2= admin , 3= user
+    "email": "test@testmail.com",  UNIQUE
+    "password": "password@123",  
+    "confirm_password": "password@123",
+    "primary_mobile": 9081772616   UNIQUE
+}
+
+
+2 . Demonstrated Hashing compare, JWT token generation and expiration.
+--------------------------------------------------------------------------
+
+http://localhost:3001/user/login  POST   NO-TOKEN
+BODY -
+
+{
+    "email": "test@testmail.com",
+    "password": "password@123"
+}
+
+3 . Demonstrated File upload technique, database update , Multer and Auth guard.
+So without proper token you can't update. Only person him/ser self can upload.
+-----------------------------------------------------------------------
+
+http://localhost:3001/user/upload-profile-image  POST TOKEN-REQUIRED
+BODY -
+
+Form-Data - params name - image 
+
+
+
+4 . Demonstrated Role wise auth guard technique, Only admin and super admin can have access of delete.
+demonstrated delete technique.
+--------------------------------------------------------------------------------------------------------
+
+http://localhost:3001/user/delete/1  DELETE ADMIN-TOKEN-REQUIRED  1 = id from user table.
+
+
+4 . Demonstrated Webhook & we can also add access token validation here.
+--------------------------------------------------------------------------------------------------------
+
+http://localhost:3001/hook/sms  POST NO-TOKEN-REQUIRED 
+
