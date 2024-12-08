@@ -17,5 +17,6 @@ export class HookService {
 
     processWebhookData = (data)=>{
         // we can add data to our database from here...
+        return true;
     }
 }

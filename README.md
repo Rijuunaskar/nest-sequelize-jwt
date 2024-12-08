@@ -24,6 +24,12 @@ $ npx sequelize-cli db:migrate
 $ npx sequelize-cli db:seed:all
 ```
 
+## Test
+
+```bash
+$ npm run test
+```
+
 
 ## Compile and run the project
 

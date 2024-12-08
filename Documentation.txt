@@ -28,6 +28,9 @@ Key FETAURE
 11. Databse Seeding & Migration
 12. Validation with class validator
 13. For testing separate spec.ts files are created, we can move forward from there.
+14. Docker
+15. CI/CD pipeline file
+16. JEST
 
 API LIST & FETAURE
 ======================

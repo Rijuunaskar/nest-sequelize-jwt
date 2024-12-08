@@ -20,8 +20,6 @@ const CONNECTION: any = {
   database:  dbConfig[_NODE_ENV]['database'],
   models: MODELS,
   logging: false,
-  //autoLoadModels: true,
-  // synchronize: true,
   dialectOptions: {
     useUTC: false,
     dateStrings: true,
