@@ -11,5 +11,5 @@ export declare class HookService {
         message: any;
         res?: undefined;
     }>;
-    processWebhookData: (data: any) => void;
+    processWebhookData: (data: any) => boolean;
 }

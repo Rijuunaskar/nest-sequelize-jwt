@@ -22,6 +22,7 @@ let HookService = class HookService {
             }
         };
         this.processWebhookData = (data) => {
+            return true;
         };
     }
 };
