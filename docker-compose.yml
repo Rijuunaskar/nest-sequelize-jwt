@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  nest-sequelize-jwt:
+      restart: on-failure
+      build:
+        context: "."
+        dockerfile: "./Dockerfile"
+      networks:
+        - gh_network
+      ports:
+        - "7902:7902"
+      volumes:
+        - ./nest-sequelize-jwt:/opt/app
+        
+networks:
+  gh_network:
+    external: true
+    name: gh_network
